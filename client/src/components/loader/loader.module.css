@@ -1,0 +1,34 @@
+/* #container {
+    background-image: url('../home/img/pika.png');
+    background-size: 100rem;
+    background-position-y: -30vh;
+    background-position-x: -12vh;
+    background-repeat: no-repeat;
+    height: calc(100vh - 15.5vh);
+    width: 100vw;
+
+} */
+
+#loader {
+    border: .3rem solid rgba(0, 0, 0, 0.062);
+    border-top-color: rgba(1, 10, 12, 0.623);
+    border-top-style: solid;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    -webkit-animation: girar 2.5s linear infinite;
+        -o-animation: girar 2.5s linear infinite;
+            animation: girar 2.5s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

@@ -1,0 +1,11 @@
+
+.cards{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    margin-left: 12vw;
+    border-radius: 15px;
+}
+

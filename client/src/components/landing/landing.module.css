@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+#landing{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+#back {
+    position: absolute;
+    background-image: url('./img/pokeball02.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 200px;
+    margin-left: 42vw;
+    margin-top: 30vh;
+    
+    
+    height: 29.5vh;
+    width: calc(5px + 29.2vh);
+    background-size: 30vh;
+    box-shadow: 0px 0px 10px 1px black;
+    
+}
+
+#back:hover {
+    transform: scale(1.2,1.2)  rotateY(360deg);
+    /* transform: rotateY(360deg); */
+    transition-duration: 1.5s;
+    
+
+}
+

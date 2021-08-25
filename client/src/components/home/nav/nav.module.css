@@ -1,0 +1,41 @@
+:root {
+    --var-shadow: 0px 0px 10px 1px black; 
+}
+
+#containerNav {
+    height: 9.5vh;
+}
+
+#containerNav ol{
+    display: inline-flex;
+    width: 100%;
+    background: rgba(226, 226, 226, 0.7801);
+    box-shadow: var(--var-shadow);
+    margin-bottom: 5vh;
+}
+
+#containerNav ol li {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5vh;
+    list-style: none;
+
+}
+
+#containerNav ol li p {
+    margin: 3vh;
+}
+
+#containerNav ol #search {
+    margin-top: 2.5vh;
+    margin-left: 60vw;
+}
+
+#containerNav ol .liNav:hover {
+    box-shadow: 0px 0px 5px 1px black;
+    
+    transform: scale(1.1);
+    transition-duration: .5s;
+    border-radius: 15px;
+}
+

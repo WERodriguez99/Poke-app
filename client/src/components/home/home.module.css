@@ -1,0 +1,33 @@
+#container {
+    
+    height: calc(100vh - 9.5vh);
+}
+
+body {
+    
+    background: rgba(60, 125, 136, 0.767);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: .5vw;     /* Tamaño del scroll en vertical */
+    height: .2vh;    /* Tamaño del scroll en horizontal */
+    /* display: none; */  /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
