@@ -33,7 +33,7 @@ export default function CreatePoke() {
 
             if (name && hp && attack && defense && special_attack && special_defense && speed && types.length > 0 && height && weight) {
 
-                axios.post(`http://localhost:3001/pokeApp/pokemon/create`, state)
+                axios.post(`/pokeApp/pokemon/create`, state)
                 reset()
                 swal("Gooooood!!!", "Poke created!", "success");
             }
