@@ -10,7 +10,7 @@ import DetailPoke from './components/cards/detailCard';
 
 
 function App() {  
-
+  
   return (
     <div className="App">
      <Route
