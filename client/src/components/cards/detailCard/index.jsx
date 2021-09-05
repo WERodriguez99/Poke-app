@@ -10,11 +10,7 @@ export default function DetailPoke() {
     const store = useSelector(state => state.dataPoke);
     const dispatch = useDispatch()
 
-    const [ type, setType ] = useState(undefined)
-
-    const data = (types) => {
-        
-    }
+    //const [ type, setType ] = useState(undefined)
 
     return (
         <div id={S.container}>

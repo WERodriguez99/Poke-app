@@ -1,6 +1,6 @@
 import React from 'react'
 import S from './loader.module.css'
-import img from '../home/img/psyduck_02.jpg'
+//import img from '../home/img/psyduck_02.jpg'
 
 export default function Loader() {
     return (

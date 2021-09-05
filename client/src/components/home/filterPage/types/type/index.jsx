@@ -2,7 +2,7 @@ import React from 'react';
 import S from './type.module.css';
 import { iconFilter } from '../../../../../filterLogos/funcIcons'
 
-export default function Type({id, type}) {
+export default function Type({ type }) {
 
     return (
         <div>

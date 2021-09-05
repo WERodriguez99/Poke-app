@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPokeName, getPokes } from '../../../actions';
+import { getPokeName } from '../../../actions';
 
-import S from './search.module.css'
+//import S from './search.module.css'
 
 export default function SearchPoke() {
     const dispatch = useDispatch()
