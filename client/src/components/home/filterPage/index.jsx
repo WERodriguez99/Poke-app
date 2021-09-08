@@ -32,7 +32,7 @@ export default function FilterPage() {
         dispatch(getPokes(state))
         dispatch(getLength(state))
         dispatch(getNames())
-    }, [state])
+    }, [dispatch, state])
 
 
     const card = type => {
@@ -67,19 +67,19 @@ export default function FilterPage() {
             {<div id={S.containerFilters}>
 
                 <select onChange={e => upgradeState(e)} name="type_stats">
-                    <option id='type_stats' value="none"> types/stats </option>
+                    <option id='type_stats' value="none" default> types/stats </option>
                     <option id='type_stats' value="type"> Types </option>
                     <option id='type_stats' value="stats"> Stats </option>
                 </select>
 
                 <select onChange={e => upgradeState(e)} name="filter" >
-                    <option name='filter' value="ALL" selected>All pokes</option>
+                    <option name='filter' value="ALL" default>All pokes</option>
                     <option name='filter' value="EXISTG">pokes existg</option>
                     <option name='filter' value="CREATES">pokes creates</option>
                 </select>
 
                 <select onChange={e => upgradeState(e)} name="order">
-                    <option name='order' value="DEFAULT" selected>Order</option>
+                    <option name='order' value="DEFAULT" default>Order</option>
                     <option name='order' value="ASCENDANT">ascendant</option>
                     <option name='order' value="DESCENDANT">descendant</option>
 

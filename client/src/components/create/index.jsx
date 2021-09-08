@@ -96,7 +96,7 @@ export default function CreatePoke() {
 
             <form method='post' onSubmit={e => handleSubmit(e)}>
                 <table id={S.createTable}>
-                    <tr colspan='2'>
+                    <tr colSpan='2'>
                         <td>
                             <Link id={S.containerBTN} to="/pokeApp" >
                                 <p> X </p>
@@ -214,7 +214,7 @@ export default function CreatePoke() {
                         </td>
                     </tr>
 
-                    <tr colspan='2'>
+                    <tr colSpan='2'>
                         <td id={S.btnContainer}>
                             <button type='submit' onClick={() => sendData(state)}>enviar</button>
                         </td>
@@ -227,7 +227,7 @@ export default function CreatePoke() {
 
             <table id={S.tableTypes}>
 
-                <tr colspan='2'>
+                <tr colSpan='2'>
                     <td>
                         <label>types</label><br />
                         <input id='type' list="types" value={state.type} onChange={e => handleChange(e)} />

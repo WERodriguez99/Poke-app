@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { iconFilter } from '../../../filterLogos/funcIcons';
 import { Link } from 'react-router-dom'
@@ -25,7 +25,7 @@ export default function DetailPoke() {
                     </tr>
                     <tr>
                         <td  colspan='2'>
-                            <img src={store.sprite_front} id={S.imgPoke} />
+                            <img src={store.sprite_front} alt="IMG poke" id={S.imgPoke} />
                         </td>
                     </tr>
 
@@ -70,8 +70,8 @@ export default function DetailPoke() {
                     </div>
 
                         <tr id={S.containerTypes}>
-                            <td><img src={iconFilter(store.types.slot1)} /></td>
-                            { store.types.slot2 && <td><img src={iconFilter(store.types.slot2)} /></td> }
+                            <td><img src={iconFilter(store.types.slot1)} alt="IMG type poke" /></td>
+                            { store.types.slot2 && <td><img src={iconFilter(store.types.slot2)} alt="IMG type poke"/></td> }
                         </tr>
                 </table>
             }
